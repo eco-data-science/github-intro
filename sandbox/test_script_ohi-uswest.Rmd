@@ -3,17 +3,22 @@ title: "Modify this script to test with GitHub"
 output: html_document
 ---
 
+This is an Rmarkdown script we will modify to practice commiting with GitHub. We will reformat some data for the US West Coast Ocean Health Index assessment. Along the way, you can get a little more exposure to:
+
+- Rmarkdown
+- reading versioned data directly from github.com
+- data wrangling with dplyr, tidyr
 
 ## Setup
 
 ```{r setup, message=F}
 
-# Install packages
+# load packages
 library(dplyr)   # install.packages('dplyr')
 library(tidyr)   # install.packages('tidyr')
-library(stringr) # install.packages('stringr')
+library(knitr)   # install.packages('knitr')
 
-# Directories
+# directories
 dir_sandbox = '~/github/github-intro/sandbox'
 
 ```
@@ -21,10 +26,14 @@ dir_sandbox = '~/github/github-intro/sandbox'
 
 ## Explore data read in directly from a different github repository
 
+- navigate to [github.com/OHI-Science/ohi-uswest/scores/scores_index.csv](https://github.com/OHI-Science/ohi-uswest/scores/scores_index.csv)
+- click the 'history' button
+- click the `<>` button
+- click the 'raw' button and copy the url to read directly into R
+
 ```{r explore data, message=F}
 
-# navigate to github.com/OHI-Science/ohi-uswest/scores/scores_index.csv and click the 'raw' button to read directly into R
-us_data = read.csv('https://raw.githubusercontent.com/OHI-Science/ohi-uswest/master/scores/scores_index.csv')
+us_data = read.csv('https://raw.githubusercontent.com/OHI-Science/ohi-uswest/bb2ca4ddc0746edc2f94b5ce07de54e4781f85ce/scores/scores_index.csv')
 # us_data
 
 ```
@@ -34,29 +43,27 @@ us_data = read.csv('https://raw.githubusercontent.com/OHI-Science/ohi-uswest/mas
 ```{r clean data}
 
 # relabel
-us_data$region_id[us_data$region_id == 8] = 0
-us_data$region_label = as.character(us_data$region_label)
-us_data$region_label[us_data$region_id == 0] = 'US West Coast'
+us_data$region_id[us_data$region_id == 8] = 0                   # by convention, study area is region_id 0
+us_data$region_label = as.character(us_data$region_label)       # wouldn't rename as factor
+us_data$region_label[us_data$region_id == 0] = 'US West Coast'  # simplify name
 
 # remove unneeded columns
 us = us_data %>%
-  arrange(region_id) %>%
-  select(-region_code, -km2, -preservationist, -extractive, -nonextractive, -extreme, -cc_workshop) %>%
-  filter(region_label != 'California Current Ocean') %>%
+  dplyr::arrange(region_id) %>%
+  dplyr::select(-region_code, -km2, -preservationist, -extractive, -nonextractive, -extreme, -cc_workshop) %>%
+  dplyr::filter(region_label != 'California Current Ocean') %>%
   dplyr::rename(Index = unweighted)
 
 ```
 
 ## Wrangle
 
-```{r wrangle}
+```{r wrangle, eval=F}
 
 # format long and round scores
 us = us %>%
-  gather(goal, score, -region_id, -region_label) %>%
-  mutate(score = round(score, 2))
-  
-# head(us, 20)    
+  tidyr::gather(goal, score, -region_id, -region_label) %>%
+  dplyr::mutate(score = round(score, 2))
 
 ```
 
@@ -65,8 +72,6 @@ us = us %>%
 ```{r save}
 
 write.csv(us, file.path(dir_sandbox, 'scores-ohi-uswest.csv'), row.names =F)
-
-# save a bunch of files, see them pop up in the Git pane
 
 ```
 

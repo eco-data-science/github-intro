@@ -1,15 +1,16 @@
 ---
-title: 'Introduction to GitHub'
-author: "Julia Stewart Lowndes<br /> Project Scientist, Ocean Health Index<br /> lowndes@nceas.ucsb.edu"
+title: "Introduction to GitHub"
+author: "Julia Stewart Lowndes<br> Project Scientist, Ocean Health Index<br> lowndes@nceas.ucsb.edu"
 output: ioslides_presentation
 ---
 
 ## What is GitHub?  
+<!---To view rendered .html files, preappend http://htmlpreview.github.io/? to the url. See http://htmlpreview.github.io/ for details--->
 <!---Make notes or comments that won't be rendered using this syntax--->
 
 [**GitHub**](https://github.com) is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes.
 
-Similar to Dropbox, you have certain folders on your local computer that will be synched online, although you have more control about the synching. You can store, share, track changes and collaboratively edit many filetypes (including this [presentation]!), using any program to edit, and can use a shared to-do list (called Issues). 
+Similar to Dropbox, you have certain folders on your local computer that will be synched online, although you have more control about the synching. You can store, share, track changes and collaboratively edit many filetypes (including this [presentation](https://github.com/eco-data-science/github-intro/blob/master/index.rmd)!), using any program to edit, and can use a shared to-do list (called Issues). 
 
 ## Why use GitHub?  
 
@@ -29,6 +30,7 @@ And also by Karl Broman in his [GitHub Tutorial](http://kbroman.org/github_tutor
 * [**Good Resources for Learning Git and GitHub**](https://help.github.com/articles/good-resources-for-learning-git-and-github/) by GitHub
 * [**Learn Git Branching**](http://pcottle.github.io/learnGitBranching/) by Peter Cottle
 * [**Git/GitHub Guide**](http://kbroman.org/github_tutorial/) by Karl Broman 
+* [**Git & GitHub**}(http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html) by Ben Best
 
 * [**Hello World GitHub Guide**](https://guides.github.com/activities/hello-world/), a 10-minute tutorial by GitHub
 
@@ -38,7 +40,7 @@ Just Google 'GitHub Tutorial...'
 
 1. GitHub Structure
 2. GitHub Vocabulary
-3. Filepaths
+3. Best Practices
 4. Cloning and Synching Options 
 5. Cloning Examples
 6. Synching Examples
@@ -53,6 +55,8 @@ Repositories ('repos') are essentially folders containing scripts and small text
 
 * [eco-data-science](https://github.com/eco-data-science) is an **organization**
 * [github-intro](https://github.com/OHI-Science/github-intro) is a **repository**
+
+*Let's navigate through a github repo: [eco-data-science/github-intro](https://github.com/OHI-Science/github-intro)*
 
 ## GitHub Vocabulary
 
@@ -72,26 +76,21 @@ All collaborators will work locally on their own computers, syncing their change
 
 ![](./clone_push_pull.png)
 
-## fork & pull model
 
-|       | `github.com/[user0]/[repo]` <br> (orig, web)  | `github.com/[user]/[repo]` <br> (you, web) |   `~/github/[repo]` <br> (you, local) |
-|-------|-----------------------------------------------|--------------------------------------------|---------------------------------------|
-| <span  + class="mega-octicon octicon-arrow-right"></span> (1x) |         | <span  + class="mega-octicon octicon-arrow-right"></span> [**fork**](https://help.github.com/articles/fork-a-repo) <span  + class="mega-octicon octicon-repo-forked"></span> | <span  + class="mega-octicon octicon-arrow-right"></span> [**clone**](https://help.github.com/articles/fetching-a-remote) <span  + class="mega-octicon octicon-cloud-download"></span> |
-| <span  + class="mega-octicon octicon-arrow-down"></span>   |                                               |          | <span  + class="mega-octicon octicon-arrow-down"></span> [**commit**](http://git-scm.com/docs/git-commit) <span  + class="mega-octicon octicon-git-commit"></span> |
-| <span  + class="mega-octicon octicon-arrow-down"></span>   |                                               |          | <span  + class="mega-octicon octicon-arrow-down"></span> [**branch**](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/) <span  + class="mega-octicon octicon-git-branch"></span> |
-| <span  + class="mega-octicon octicon-arrow-left"></span>    |                                               |             | <span  + class="mega-octicon octicon-arrow-left"></span> [**push**](https://help.github.com/articles/pushing-to-a-remote/) <span  + class="mega-octicon octicon-cloud-upload"></span> |
-| <span  + class="mega-octicon octicon-arrow-left"></span>    | [**merge**](https://help.github.com/articles/merging-a-pull-request) <span  + class="mega-octicon octicon-git-merge"></span> | <span  + class="mega-octicon octicon-arrow-left"></span> [**pull request**](https://help.github.com/articles/creating-a-pull-request/) <span  + class="mega-octicon octicon-git-pull-request"></span> | |
+## Best Practices
 
-slide modified from @bbest's [ds-git tutorial](https://github.com/eco-data-science/ds-git/blob/gh-pages/index.md)
+**Pull often!**
 
-## Filepaths
+**Commit frequently** 
 
-Because you will be working collaboratively with others, where you store your files makes a big difference. 
+**Be mindful of filepaths**
 
-Save any GitHub repos is a folder in your home directory called ***'github'***, so that you can access it with the filepath `~/github`. 
+We all store GitHub repos in our home directory in a folder called ***'github'*** (all lowercase!), so that you can access it with the filepath `~/github`. 
 
 * **Windows**: `Users\[User]\Documents\github\`
 * **Mac**: `Users/[User]/github/`
+
+*Please make a `github` folder in your home directory.*
 
 
 ## Cloning and Synching Options
@@ -103,36 +102,40 @@ When you work on your computer, any edits you make to any files in your repo, us
 * **GitHub App** [for Mac](https://mac.github.com/) and [for Windows](https://windows.github.com/)
 * [**RStudio**](www.rstudio.com)
 * **shell (Terminal on Mac)**
+
+*We will just use RStudio today.*
  
-## Cloning Examples
+## Workflow using RStudio
 
-We will walk through two examples: 
+Demo:
 
-1. clone a repository using the GitHub app  
-2. clone a repository using RStudio.
+1. **clone a repo** from github.com, then RStudio
+2. **edit within the repo**: [test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd) in RStudio, then create a file in Excel
+3. **commit**
+4. **pull**
+5. **push**
 
-You can also clone using the shell (we will not discuss that here).
 
-## Synching Examples
+## Let's practice
 
-We will walk through two examples: 
-
-1. create a new file in Excel, save as *.csv* in your repo, commit, pull, push using GitHub App.  
-2. modify R script using RStudio, commit, pull, push from RStudio.
-
-You can also synch using the shell but we will not discuss that here.
-
-## Getting Started
-
-Follow these steps, referring to the Ocean Health Index Manual's section on [Installing the Toolbox](http://ohi-science.org/manual/#installing-the-toolbox) for more detailed instructions. 
+If you haven't already (you can refer to the [OHI Manual](http://ohi-science.org/manual/#installing-the-toolbox)): 
 
 1. Create a [GitHub](http://github.com) account 
-2. Download and install [*git*](http://git-scm.com/downloads) software
-3. Set up your git identity
-4. Install the GitHub application
-5. Create a folder called  ***github*** on your computer
-5. Email your GitHub username to Julie so you can finally: 
-6. Clone your repository to your computer
+2. Download and install [*git*](http://git-scm.com/downloads) software, set up your git identity
+3. Email your GitHub username to lowndes@nceas.ucsb.edu
+4. Create a folder called  ***github*** on your computer
+5. Clone [github-intro](https://github.com/OHI-Science/github-intro) repository to your computer
 
-Now you can work locally, synching your edits back to the online repositories!
+## Let's practice
+
+Now: 
+
+1. Pull 
+2. Edit [test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd) in RStudio
+3. Commit changes
+4. Pull
+5. Push
+6. Repeat!
+
+
 
