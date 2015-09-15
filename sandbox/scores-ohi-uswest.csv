@@ -1,0 +1,115 @@
+"region_id","region_label","goal","score"
+0,"US West Coast","Index",70.52
+1,"Northern California","Index",66.73
+2,"Central California","Index",70.81
+3,"Southern California","Index",73.01
+4,"Oregon","Index",73.79
+5,"Washington","Index",65.45
+0,"US West Coast","FIS",72.89
+1,"Northern California","FIS",78.54
+2,"Central California","FIS",79.43
+3,"Southern California","FIS",79.16
+4,"Oregon","FIS",56.44
+5,"Washington","FIS",64.38
+0,"US West Coast","FP",70.83
+1,"Northern California","FP",77.27
+2,"Central California","FP",78.14
+3,"Southern California","FP",77.89
+4,"Oregon","FP",55.88
+5,"Washington","FP",53.08
+0,"US West Coast","MAR",20.48
+1,"Northern California","MAR",24.27
+2,"Central California","MAR",24.48
+3,"Southern California","MAR",24.54
+4,"Oregon","MAR",4.66
+5,"Washington","MAR",26.84
+0,"US West Coast","AO",56.75
+1,"Northern California","AO",51.38
+2,"Central California","AO",56.69
+3,"Southern California","AO",55.41
+4,"Oregon","AO",68.59
+5,"Washington","AO",47.47
+0,"US West Coast","NP",NA
+1,"Northern California","NP",NA
+2,"Central California","NP",NA
+3,"Southern California","NP",NA
+4,"Oregon","NP",NA
+5,"Washington","NP",NA
+0,"US West Coast","CS",59.32
+1,"Northern California","CS",45.99
+2,"Central California","CS",54.3
+3,"Southern California","CS",61.48
+4,"Oregon","CS",72.62
+5,"Washington","CS",68.6
+0,"US West Coast","CP",58.07
+1,"Northern California","CP",50.73
+2,"Central California","CP",54.82
+3,"Southern California","CP",57.37
+4,"Oregon","CP",70.92
+5,"Washington","CP",56.83
+0,"US West Coast","TR",99.28
+1,"Northern California","TR",98.96
+2,"Central California","TR",98.96
+3,"Southern California","TR",98.96
+4,"Oregon","TR",100
+5,"Washington","TR",100
+0,"US West Coast","LIV",89.23
+1,"Northern California","LIV",83.08
+2,"Central California","LIV",93.93
+3,"Southern California","LIV",93.04
+4,"Oregon","LIV",95.8
+5,"Washington","LIV",69.6
+0,"US West Coast","LE",87.04
+1,"Northern California","LE",73.93
+2,"Central California","LE",90.18
+3,"Southern California","LE",96.88
+4,"Oregon","LE",97.9
+5,"Washington","LE",62.65
+0,"US West Coast","ECO",84.47
+1,"Northern California","ECO",65.02
+2,"Central California","ECO",86.4
+3,"Southern California","ECO",98.97
+4,"Oregon","ECO",100
+5,"Washington","ECO",55.8
+0,"US West Coast","ICO",58.45
+1,"Northern California","ICO",57.19
+2,"Central California","ICO",54.47
+3,"Southern California","ICO",56.85
+4,"Oregon","ICO",63.82
+5,"Washington","ICO",62.57
+0,"US West Coast","SP",47.71
+1,"Northern California","SP",47.51
+2,"Central California","SP",48.17
+3,"Southern California","SP",51.66
+4,"Oregon","SP",44
+5,"Washington","SP",44.95
+0,"US West Coast","LSP",37.22
+1,"Northern California","LSP",38.12
+2,"Central California","LSP",41.98
+3,"Southern California","LSP",46.61
+4,"Oregon","LSP",24.65
+5,"Washington","LSP",27.54
+0,"US West Coast","CW",86.82
+1,"Northern California","CW",89.16
+2,"Central California","CW",84.51
+3,"Southern California","CW",84.92
+4,"Oregon","CW",88.85
+5,"Washington","CW",86.42
+0,"US West Coast","HAB",68.87
+1,"Northern California","HAB",65.22
+2,"Central California","HAB",74.4
+3,"Southern California","HAB",73.15
+4,"Oregon","HAB",64.45
+5,"Washington","HAB",64.62
+0,"US West Coast","BD",68.81
+1,"Northern California","BD",65.61
+2,"Central California","BD",71.51
+3,"Southern California","BD",72.49
+4,"Oregon","BD",65.36
+5,"Washington","BD",69.03
+0,"US West Coast","SPP",68.71
+1,"Northern California","SPP",65.95
+2,"Central California","SPP",68.67
+3,"Southern California","SPP",71.8
+4,"Oregon","SPP",66.19
+5,"Washington","SPP",73.19

@@ -1,0 +1,72 @@
+---
+title: "Modify this script to test with GitHub"
+output: html_document
+---
+
+
+## Setup
+
+```{r setup, message=F}
+
+# Install packages
+library(dplyr)   # install.packages('dplyr')
+library(tidyr)   # install.packages('tidyr')
+library(stringr) # install.packages('stringr')
+
+# Directories
+dir_sandbox = '~/github/github-intro/sandbox'
+
+```
+
+
+## Explore data read in directly from a different github repository
+
+```{r explore data, message=F}
+
+# navigate to github.com/OHI-Science/ohi-uswest/scores/scores_index.csv and click the 'raw' button to read directly into R
+us_data = read.csv('https://raw.githubusercontent.com/OHI-Science/ohi-uswest/master/scores/scores_index.csv')
+# us_data
+
+```
+
+## Clean up labeling, remove unneeded columns
+
+```{r clean data}
+
+# relabel
+us_data$region_id[us_data$region_id == 8] = 0
+us_data$region_label = as.character(us_data$region_label)
+us_data$region_label[us_data$region_id == 0] = 'US West Coast'
+
+# remove unneeded columns
+us = us_data %>%
+  arrange(region_id) %>%
+  select(-region_code, -km2, -preservationist, -extractive, -nonextractive, -extreme, -cc_workshop) %>%
+  filter(region_label != 'California Current Ocean') %>%
+  dplyr::rename(Index = unweighted)
+
+```
+
+## Wrangle
+
+```{r wrangle}
+
+# format long and round scores
+us = us %>%
+  gather(goal, score, -region_id, -region_label) %>%
+  mutate(score = round(score, 2))
+  
+# head(us, 20)    
+
+```
+
+## Save
+
+```{r save}
+
+write.csv(us, file.path(dir_sandbox, 'scores-ohi-uswest.csv'), row.names =F)
+
+# save a bunch of files, see them pop up in the Git pane
+
+```
+
