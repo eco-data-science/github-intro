@@ -1,4 +1,4 @@
-# Brief introduction to GitHub
+# Brief Introduction to GitHub
 
 This repository has the code and data files necessary for the Introduction to GitHub 'Workshop' on September 16, 2015 at UCSB.
 
