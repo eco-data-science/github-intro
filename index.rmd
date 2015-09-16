@@ -72,13 +72,13 @@ All collaborators will work locally on their own computers, syncing their change
 
 ## GitHub Workflow
 
-**sync ~ pull + commit + push**
+**sync ~ pull + commit + pull +push**
 
 ![](fig/github_workflow1.png)
 
 ## GitHub Workflow
 
-**sync ~ pull + commit + push**
+**sync ~ pull + commit + pull + push**
 
 ![](fig/github_workflow2.png)
 
