@@ -3,11 +3,11 @@ title: "Modify this script to test with GitHub"
 output: html_document
 ---
 
-This is an Rmarkdown script we will modify to practice commiting with GitHub. We will reformat some data for the US West Coast Ocean Health Index assessment. Along the way, you can get a little more exposure to:
+This is an Rmarkdown script we will modify to practice commiting with GitHub for the Introduction to GitHub 'Workshop' on September 16, 2015 at UCSB. We will reformat some scores from the US West Coast Ocean Health Index assessment. Along the way, you can get a little more exposure to:
 
 - Rmarkdown
-- reading versioned data directly from github.com
-- data wrangling with dplyr, tidyr
+- reading versioned data directly from [github.com](https://github.com)
+- data wrangling with `dplyr`, `tidyr`
 
 ## Setup
 

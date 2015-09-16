@@ -1,7 +1,7 @@
 ---
 title: "Introduction to GitHub"
 author: "Julia Stewart Lowndes<br> Project Scientist, Ocean Health Index<br> lowndes@nceas.ucsb.edu"
-output: beamer_presentation
+output: ioslides_presentation
 ---
 
 ## What is GitHub?  
@@ -14,11 +14,13 @@ Similar to Dropbox, you have certain folders on your local computer that will be
 
 ## Why use GitHub?  
 
-So many reasons to use GitHub. Personal organization, backing up, version control, collaboration, sharing. . .
+There are so many reasons to use GitHub. Personal organization, switching between your home and work computers, backing up, version control. Also for collaboration, sharing, learning, contributing. . .
 
-Nicely explained by Hadley Wickham in his  [Git and GitHub Tutorial](http://r-pkgs.had.co.nz/git.html) 
+Nicely explained by Hadley Wickham in his  [Git and GitHub Tutorial](https://github.com/rstudio/webinars/blob/master/06-Collaboration-and-time-travel-version-control/git-github.pdf) 
 
 And also by Karl Broman in his [GitHub Tutorial](http://kbroman.org/github_tutorial/pages/why.html)
+
+And also by Ben Best in his [ds-git Tutorial](http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html)
 
 
 ## Resources
@@ -26,35 +28,33 @@ And also by Karl Broman in his [GitHub Tutorial](http://kbroman.org/github_tutor
 **Learn more about GitHub:**
 
 * [**Git and GitHub**](http://r-pkgs.had.co.nz/git.html) by Hadley Wickham
-* [**Collaboration and Time Travel: Version Control with Git, GitHub and RStudio**](http://www.rstudio.com/resources/webinars/) video tutorial by Hadley Wickham
 * [**Good Resources for Learning Git and GitHub**](https://help.github.com/articles/good-resources-for-learning-git-and-github/) by GitHub
 * [**Learn Git Branching**](http://pcottle.github.io/learnGitBranching/) by Peter Cottle
 * [**Git/GitHub Guide**](http://kbroman.org/github_tutorial/) by Karl Broman 
-* [**Git & GitHub**}(http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html) by Ben Best
+* [**Git & GitHub**](http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html) by Ben Best
 
 * [**Hello World GitHub Guide**](https://guides.github.com/activities/hello-world/), a 10-minute tutorial by GitHub
 
 Just Google 'GitHub Tutorial...'
 
-## Outline
+## Workshop Outline
 
 1. GitHub Structure
 2. GitHub Vocabulary
-3. Best Practices
-4. Cloning and Synching Options 
-5. Cloning Examples
-6. Synching Examples
-7. Getting Started
-8. Resources
+3. GitHub Workflow
+4. Best Practices
+5. Cloning and Synching Options 
+6. Workflow demo using RStudio
+7. Practice
 
 ## GitHub Structure
 
 GitHub stores files in **repositories**, owned by an **organization**.  
 
-Repositories ('repos') are essentially folders containing scripts and small text files. Repositories are version controlled so that any modifications to files, additions or deletions, are tracked and attributed to contributors with the correct permissions. 
+Repositories ('repos') are essentially folders containing files pertaining to a specific project. Repositories are version controlled so that any modifications to files, additions or deletions, are tracked and attributed to contributors with the correct permissions. 
 
 * [eco-data-science](https://github.com/eco-data-science) is an **organization**
-* [github-intro](https://github.com/OHI-Science/github-intro) is a **repository**
+* [github-intro](https://github.com/eco-data-science/github-intro) is a **repository**
 
 *Let's navigate through a github repo: [eco-data-science/github-intro](https://github.com/OHI-Science/github-intro)*
 
@@ -67,14 +67,20 @@ All collaborators will work locally on their own computers, syncing their change
 * **pull**: sync a repo on your computer with online version
 * **push**: sync the online repo with your version, only possible after committing
 
-**sync = pull + commit + push**
+**sync ~ pull + commit + push**
 
 
-## GitHub Vocabulary
+## GitHub Workflow
 
-**sync = pull + commit + push**
+**sync ~ pull + commit + push**
 
-![](./clone_push_pull.png)
+![](fig/github_workflow1.png)
+
+## GitHub Workflow
+
+**sync ~ pull + commit + push**
+
+![](fig/github_workflow2.png)
 
 
 ## Best Practices
@@ -85,7 +91,7 @@ All collaborators will work locally on their own computers, syncing their change
 
 **Be mindful of filepaths**
 
-We all store GitHub repos in our home directory in a folder called ***'github'*** (all lowercase!), so that you can access it with the filepath `~/github`. 
+We work from a in a folder in our home directory called ***'github'*** (all lowercase!), so that everyone can access the repo with the filepath `~/github`. 
 
 * **Windows**: `Users\[User]\Documents\github\`
 * **Mac**: `Users/[User]/github/`
@@ -105,18 +111,16 @@ When you work on your computer, any edits you make to any files in your repo, us
 
 *We will just use RStudio today.*
  
-## Workflow using RStudio
+## Workflow demo using RStudio
 
-Demo:
-
-1. **clone a repo** from github.com, then RStudio
-2. **edit within the repo**: [test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd) in RStudio, then create a file in Excel
+1. **clone a repo**
+2. **edit a file**: [test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd)
 3. **commit**
 4. **pull**
 5. **push**
 
 
-## Let's practice
+## Practice
 
 If you haven't already (you can refer to the [OHI Manual](http://ohi-science.org/manual/#installing-the-toolbox)): 
 
@@ -124,9 +128,9 @@ If you haven't already (you can refer to the [OHI Manual](http://ohi-science.org
 2. Download and install [*git*](http://git-scm.com/downloads) software, set up your git identity
 3. Email your GitHub username to lowndes@nceas.ucsb.edu
 4. Create a folder called  ***github*** on your computer
-5. Clone [github-intro](https://github.com/OHI-Science/github-intro) repository to your computer
+5. Clone [github-intro](https://github.com/eco-data-science/github-intro) repository to your computer
 
-## Let's practice
+## Practice
 
 Now: 
 
