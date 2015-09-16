@@ -23,6 +23,9 @@ And also by Karl Broman in his [GitHub Tutorial](http://kbroman.org/github_tutor
 And also by Ben Best in his [ds-git Tutorial](http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html)
 
 
+
+
+
 ## Resources
 
 **Learn more about GitHub:**
