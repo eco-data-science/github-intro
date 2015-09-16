@@ -23,9 +23,6 @@ And also by Karl Broman in his [GitHub Tutorial](http://kbroman.org/github_tutor
 And also by Ben Best in his [ds-git Tutorial](http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html)
 
 
-
-
-
 ## Resources
 
 **Learn more about GitHub:**
@@ -81,7 +78,7 @@ All collaborators will work locally on their own computers, syncing their change
 
 ## GitHub Workflow
 
-**sync ~ pull + commit + pull + push**
+**sync ~ pull + commit + pull + pull + push**
 
 ![](fig/github_workflow2.png)
 
