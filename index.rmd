@@ -82,6 +82,12 @@ All collaborators will work locally on their own computers, syncing their change
 
 ![](fig/github_workflow2.png)
 
+## GitHub Workflow: fork and pull
+
+**fork + pull + commit + push + pull request**
+
+![](fig/github_workflow_fork.png)
+
 
 ## Best Practices
 
@@ -113,11 +119,12 @@ When you work on your computer, any edits you make to any files in your repo, us
  
 ## Workflow demo using RStudio
 
-1. **clone a repo**
-2. **edit a file**: [test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd)
-3. **commit**
-4. **pull**
-5. **push**
+1. **fork a repo**
+2. **clone a repo**
+3. **edit a file**: [test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd)
+4. **commit**
+5. **pull**
+6. **push**
 
 
 ## Practice
@@ -134,7 +141,7 @@ If you haven't already (you can refer to the [OHI Manual](http://ohi-science.org
 
 Now: 
 
-1. Pull 
+1. Pull, or fork to your repo and pull
 2. Edit [test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd) in RStudio
 3. Commit changes
 4. Pull
