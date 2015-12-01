@@ -28,7 +28,7 @@ And also by Ben Best: [ds-git Tutorial](http://htmlpreview.github.io/?https://gi
 2. GitHub Workflow and Vocabulary
 3. Best Practices
 4. Cloning and Synching Options 
-5. Workflow and Practic Using RStudio
+5. Workflow and Practice Using RStudio
 6. Resources
 
 ## GitHub Structure
@@ -37,10 +37,14 @@ GitHub stores files in **repositories**, owned by an **organization**.
 
 Repositories ('repos') are essentially folders containing files pertaining to a specific project. Repositories are version controlled so that any modifications to files, additions or deletions, are tracked and attributed to contributors with the correct permissions. 
 
-* [eco-data-science](https://github.com/eco-data-science) is an **organization**
-* [github-intro](https://github.com/eco-data-science/github-intro) is a **repository**
+Same structure across all orgs/repos: familiar, easy to navigate. 
 
-*Let's navigate through a github repo: [eco-data-science/github-intro](https://github.com/OHI-Science/github-intro)*
+*Let's explore a bit:*
+
+* **organizations**: [twitter](https://github.com/twitter), [netflix](https://github.com/netflix), [rstudio](https://github.com/rstudio), [nceas](https://github.com/nceas), [ohi-science](https://github.com/ohi-science)
+* **repositories**: [github-intro](https://github.com/eco-data-science/github-intro), [dplyr](https://github.com/hadley/dplyr), [ggplot2]() 
+
+
 
 ## GitHub Workflow and Vocabulary
 
@@ -121,6 +125,16 @@ When you work on your computer, any edits you make to any files in your repo, us
 6. **pull**
 7. **push**
 8. repeat!
+
+## GitHub and science (and beyond)
+
+- [GitHub gets its science on](http://readwrite.com/2014/05/15/github-science-doi-academia-repository)
+- [Making your code citable](https://guides.github.com/activities/citable-code/)
+    - [Choosing an open source license](https://github.com/blog/1530-choosing-an-open-source-license)
+    
+<p align = 'center'>![](fig/github_license.png)  
+  
+- [Ways to use GitHub that aren't coding](http://readwrite.com/2013/11/08/seven-ways-to-use-github-that-arent-coding)
 
 ## Resources
 
