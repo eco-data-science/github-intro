@@ -1,6 +1,7 @@
 ---
 title: "Introduction to GitHub"
-author: "Julia Stewart Lowndes<br> Project Scientist, Ocean Health Index<br> lowndes@nceas.ucsb.edu"
+author: Julia Stewart Lowndes, PhD <br> Project Scientist, Ocean Health Index<br>
+  lowndes@nceas.ucsb.edu
 output: beamer_presentation
 ---
 
@@ -10,7 +11,15 @@ output: beamer_presentation
 
 [**GitHub**](https://github.com) is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes.
 
-Similar to Dropbox, you have certain folders on your local computer that will be 'watched', with any changes able to be synched online. However, with GitHub, you have more control about what is synched, and how often. You can store, share, track changes and collaboratively edit many filetypes (including this [presentation](https://github.com/eco-data-science/github-intro/blob/master/index.rmd)!), using any program to edit. There are many other great features, including a to-do list you can share with collaborators (called Issues). 
+Similar to Dropbox, you have certain folders on your local computer that will be 'watched', with any changes able to be synched online. However, with GitHub, you have more control about what is synched, and how often. You can store, share, track changes and collaboratively edit many filetypes (including this [presentation](https://github.com/eco-data-science/github-intro/blob/master/index.rmd)!) using any application. There are many other great features, including a to-do list you can share with collaborators (called Issues). 
+
+## git and GitHub
+
+<p align = 'center'>![](fig/git_github.png)
+
+**git is the engine behind GitHub.**  
+  
+It's distinct from GitHub, but this is not the focus today.
 
 ## Why use GitHub?  
 
@@ -33,7 +42,13 @@ And also by Ben Best: [ds-git Tutorial](http://htmlpreview.github.io/?https://gi
 
 ## GitHub Structure
 
-GitHub stores files in **repositories**, owned by an **organization**.  
+Files are stored in **repositories**, owned by **users** / **organizations**.  
+
+Repositories ('repos') are essentially folders containing files pertaining to a specific project. Repositories are version controlled so that any modifications to files, additions or deletions, are tracked and attributed to contributors with the correct permissions. 
+
+## GitHub Structure
+
+Files are stored in **repositories**, owned by **users** / **organizations**.  
 
 Repositories ('repos') are essentially folders containing files pertaining to a specific project. Repositories are version controlled so that any modifications to files, additions or deletions, are tracked and attributed to contributors with the correct permissions. 
 
@@ -41,8 +56,10 @@ Same structure across all orgs/repos: familiar, easy to navigate.
 
 *Let's explore a bit:*
 
-* **organizations**: [twitter](https://github.com/twitter), [netflix](https://github.com/netflix), [rstudio](https://github.com/rstudio), [nceas](https://github.com/nceas), [ohi-science](https://github.com/ohi-science)
 * **repositories**: [github-intro](https://github.com/eco-data-science/github-intro), [dplyr](https://github.com/hadley/dplyr), [ggplot2]() 
+* **users**: [jules32](https://github.com/jules32), [hadley](https://github.com/hadley), [jennybc](https://github.com/jennybc)
+* **organizations**: [twitter](https://github.com/twitter), [netflix](https://github.com/netflix), [rstudio](https://github.com/rstudio), [nceas](https://github.com/nceas), [ohi-science](https://github.com/ohi-science)
+
 
 
 
@@ -107,7 +124,7 @@ All collaborators work independently but sync regularly
 
 You will clone a repo to your computer and work locally. 
 
-When you work on your computer, any edits you make to any files in your repo, using any program, will be tracked by GitHub. You can then commit and sync your changes back to GitHub. There are many options you can use to first clone and then sync your edits on a repo with the online version:
+When you work on your computer, any edits you make to any files in your repo, using any program, will be tracked. You can then commit and sync your changes back to GitHub. There are many options you can use to first clone and then sync your edits on a repo with the online version:
 
 * **GitHub App** [for Mac](https://mac.github.com/) and [for Windows](https://windows.github.com/)
 * [**RStudio**](www.rstudio.com)
