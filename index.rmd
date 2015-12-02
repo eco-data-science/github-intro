@@ -1,7 +1,7 @@
 ---
 title: "Introduction to GitHub"
-author: Julia Stewart Lowndes, PhD <br> Project Scientist, Ocean Health Index<br>
-  lowndes@nceas.ucsb.edu
+author: Julia Stewart Lowndes, PhD <br> Project Scientist, Ocean Health Index <br>
+  National Center for Ecological Analysis and Synthesis, UC Santa Barbara <br> lowndes@nceas.ucsb.edu
 output: beamer_presentation
 ---
 
@@ -9,17 +9,22 @@ output: beamer_presentation
 <!---To view rendered .html files, preappend http://htmlpreview.github.io/? to the url--->
 <!---Make notes or comments that won't be rendered using this syntax--->
 
-[**GitHub**](https://github.com) is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes.
+[**GitHub**](https://github.com) is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes. Great for collaborators and your future self.
 
-Similar to Dropbox, you have certain folders on your local computer that will be 'watched', with any changes able to be synched online. However, with GitHub, you have more control about what is synched, and how often. You can store, share, track changes and collaboratively edit many filetypes (including this [presentation](https://github.com/eco-data-science/github-intro/blob/master/index.rmd)!) using any application. There are many other great features, including a to-do list you can share with collaborators (called Issues). 
+## What is GitHub?  
+
+[**GitHub**](https://github.com) is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes. Great for collaborators and your future self.
+
+
+Similar to Dropbox, you have certain folders on your local computer that will be 'watched', with any changes able to be synced online. However, with GitHub, you have more control about what is synced, and how often. You can store, share, track changes and collaboratively edit many filetypes (including this [presentation](https://github.com/eco-data-science/github-intro/blob/master/index.rmd)!) using any application. There are many other great features, including a to-do list you can share with collaborators (called Issues). 
 
 ## git and GitHub
 
 <p align = 'center'>![](fig/git_github.png)
-
-**git is the engine behind GitHub.**  
   
-It's distinct from GitHub, but this is not the focus today.
+Git is distinct from GitHub, but this is not the focus today.  
+  
+(definition from [GitHub.com](https://guides.github.com/introduction/getting-your-project-on-github))
 
 ## Why use GitHub?  
 
@@ -36,8 +41,8 @@ And also by Ben Best: [ds-git Tutorial](http://htmlpreview.github.io/?https://gi
 1. GitHub Structure
 2. GitHub Workflow and Vocabulary
 3. Best Practices
-4. Cloning and Synching Options 
-5. Workflow and Practice Using RStudio
+4. Syncing Options 
+5. Workflow and Practice
 6. Resources
 
 ## GitHub Structure
@@ -65,7 +70,7 @@ Same structure across all orgs/repos: familiar, easy to navigate.
 
 ## GitHub Workflow and Vocabulary
 
-* **clone**: download to your computer from online version with synching capabilities enabled
+* **clone**: download to your computer from online version with syncing capabilities enabled
 
 ![](fig/github_workflow1a.png)
 
@@ -103,6 +108,13 @@ All collaborators work independently but sync regularly
 
 ![](fig/github_workflow_fork.png)
 
+## GitHub Workflow: branches and issues
+
+![](fig/branches_issues.png)
+
+[guides.github.com/introduction/flow](https://guides.github.com/introduction/flow)
+  
+
 
 ## Best Practices
 
@@ -117,31 +129,40 @@ All collaborators work independently but sync regularly
 * **Windows**: `Users\[User]\Documents\github\`
 * **Mac**: `Users/[User]/github/`
 
-* *Please make a `github` folder in your home directory.*
 
+## Syncing Options
 
-## Cloning and Synching Options
+**On GitHub.com**, you can clone a repo to your computer.  
 
-You will clone a repo to your computer and work locally. 
+**On your computer**, you can clone/sync repos in several ways: 
 
-When you work on your computer, any edits you make to any files in your repo, using any program, will be tracked. You can then commit and sync your changes back to GitHub. There are many options you can use to first clone and then sync your edits on a repo with the online version:
-
-* **GitHub App** [for Mac](https://mac.github.com/) and [for Windows](https://windows.github.com/)
+* [**GitHub Desktop**](https://desktop.github.com/)
 * [**RStudio**](www.rstudio.com)
-* **shell (Terminal on Mac)**
+* **shell/command line**
 
-*We will just use RStudio today.*
+When you work on your computer, any edits you make to any files in your repo, using any program, will be tracked. 
+
+## Creating new repos
+
+**On GitHub.com**, you can create new repos
+
+**On your computer**, you can create new repos in several ways: 
+
+* [**GitHub Desktop**](https://desktop.github.com/)
+* [**RStudio**](www.rstudio.com)
+* **shell/command line**
+
+
  
 ## Workflow and Practice Using RStudio
 
 1. **fork a repo** to your user account
 2. **clone the repo** to your computer
-3. **edit a file**, ex [github-intro/test_script_ohi-uswest.Rmd](https://github.com/eco-data-science/github-intro/blob/master/sandbox/test_script_ohi-uswest.Rmd)
-4. inspect differences
-5. **commit** changes
-6. **pull**
-7. **push**
-8. repeat!
+3. **edit a file**, inspect differences
+4. **commit** changes
+5. **pull**
+6. **push**
+7. repeat!
 
 ## GitHub and science (and beyond)
 
@@ -157,13 +178,14 @@ When you work on your computer, any edits you make to any files in your repo, us
 
 **Learn more about GitHub:**
 
+* [**GitHub Guides**](https://guides.github.com/) by GitHub  
+  
+  
 * [**Git and GitHub**](http://r-pkgs.had.co.nz/git.html) by Hadley Wickham
 * [**Good Resources for Learning Git and GitHub**](https://help.github.com/articles/good-resources-for-learning-git-and-github/) by GitHub
 * [**Learn Git Branching**](http://pcottle.github.io/learnGitBranching/) by Peter Cottle
 * [**Git/GitHub Guide**](http://kbroman.org/github_tutorial/) by Karl Broman 
 * [**Git & GitHub**](http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html) by Ben Best
-
-* [**Hello World GitHub Guide**](https://guides.github.com/activities/hello-world/), a 10-minute tutorial by GitHub
 
 Just Google 'GitHub Tutorial...'
 
